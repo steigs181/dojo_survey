@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input_box">
+            <h1>Dojo Survey: </h1>
+            <form action="/result/submit" method="post">
+                <label for="your_name"> Your Name: </label>
+                <input type="text" name="your_name" id="name">
+                <label for="dojo_location">Dojo Location: </label>
+                <select name="dojo_location" id="dojo_location_id">
+                    <option value="chicago">Chicago</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="online">Online</option>
+                    <option value="burbank">Burbank</option>
+                    <option value="Bellevue">Bellevue</option>
+                </select>
+                <label for="fav_language">Favorite Language: </label>
+                <select name="fav_language" id="fav_language_id">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+                <label for="comment">Comments: </label>
+                <textarea name="comment" id="comment_id" cols="30" rows="10"></textarea>
+                <span>
+                    <input type="radio" name="gender" id="gender_id" value="male">
+                    <label for="gender"><strong>Male</strong></label>
+                    <input type="radio" name="gender" id="gender_id" value="female">
+                    <label for="gender"><strong>Female</strong></label>
+                </span>
+                <span><input type="checkbox" name="agreement_accept" id="agreement_id">
+                <label for="agreement_accept">I agree</label>
+                </span>
+                <button type="submit" name="submit" id="submit_btn">Submit</button>
+            </form>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1ABC9C;
+}
+
+.container .results_box {
+    height: 70%;
+    width: 40%;
+    padding: 20px;
+    color: white;
+    background-color: #BB8FCE;
+    border-radius: 20px;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 15%;
+    right: -30%;
+}
+
+
+
+.container .footer {
+    height: 4%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #ABB2B9;
+}

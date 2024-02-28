@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result.css') }}">
+    <title>Results</title>
+</head>
+<body>
+    <div class="container">
+        <div class="results_box">
+            <h1>Submitted Info:</h1>
+            <p>Name: {{ your_name }}</p>
+            <p>Location: {{ dojo_location }}</p>
+            <p>Favorite Language: {{ fav_language }}</p>
+            <p>Comments: {{ comment }}</p>
+            <p>Gender: {{ gender }}</p>
+            <form action="/result/return" method="post">
+            <button type="submit" name="go_back" class="go_back" id="back_btn">Go back</button>
+            </form>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>
